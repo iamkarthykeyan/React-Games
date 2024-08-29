@@ -1,6 +1,5 @@
 .whackamole{
     background: url("../../../../../public/WhackaMole.png");
     background-size: cover;
-    filter: blur(2px);
     height: 100vh;
 }
