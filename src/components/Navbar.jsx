@@ -14,8 +14,8 @@ const Navbar = () => {
         <div className="w-30 rounded-lg border border-black bg-transparent p-2 text-center shadow-lg bg-gradient-to-b from-black to-gray-800 text-white flex flex-col items-center justify-center">
           <div className="flex items-center justify-center">
             <div>
-              <h5 className="text-base font-bold blue-gradient_text">RoyalBattles - Games</h5>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">Use Left Right Arrows Now!</p>
+              <h5 className="text-base font-bold blue-gradient_text">RoyalBattles</h5>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Enjoy the Games</p>
             </div>
           </div>
         </div>
@@ -35,12 +35,17 @@ const Navbar = () => {
 
         {/* Mobile navigation toggle */}
         <div className="lg:hidden">
-          <button className="text-black focus:outline-none" onClick={toggleMenu} aria-label="Menu">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <button
+            className="text-black p-2"
+            onClick={toggleMenu}
+            aria-label="Menu"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
         </div>
+
 
         {/* Mobile menu */}
         {isOpen && (
